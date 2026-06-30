@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090b1d">
+    <meta name="description" content="A little universe made with love for one very special birthday.">
+    <title>Our Little Universe</title>
+    <link rel="preload" href="assets/universe-hero.png" as="image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+    <a class="skip-link" href="#main-content">Skip to the love story</a>
+
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <canvas id="star-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <section class="welcome-screen" aria-labelledby="welcome-title">
+        <div class="welcome-stars" aria-hidden="true"></div>
+        <div class="welcome-card">
+            <div class="orbit-mark" aria-hidden="true">
+                <span class="orbit orbit-one"></span>
+                <span class="orbit orbit-two"></span>
+                <span class="orbit-heart">♥</span>
+            </div>
+            <p class="eyebrow">A tiny corner of the universe</p>
+            <h1 id="welcome-title">For <span data-partner-name>My Love</span></h1>
+            <p>I made you something. It is best enjoyed slowly, with the sound on.</p>
+            <button class="button button-primary enter-button" type="button">
+                <span>Enter our universe</span>
+                <span aria-hidden="true">✦</span>
+            </button>
+            <p class="tiny-note">Headphones recommended · sound starts only when you choose</p>
+        </div>
+    </section>
+
+    <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Our Little Universe, home">
+            <span class="brand-star" aria-hidden="true">✦</span>
+            <span>Our Little Universe</span>
+        </a>
+        <nav>
+            <a href="#story">Story</a>
+            <a href="#reasons">Reasons</a>
+            <a href="#letters">Letters</a>
+            <a href="#surprise">Surprise</a>
+        </nav>
+        <button class="sound-button" type="button" aria-label="Play background music" aria-pressed="false">
+            <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="sound-label">Sound off</span>
+        </button>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="eyebrow hero-kicker"><span></span> A birthday constellation, made for you <span></span></p>
+                <h1 id="hero-title">Happy Birthday,<br><em data-partner-name>My Love</em> <span class="heart">♥</span></h1>
+                <p class="hero-copy">Of all the stars, in all the skies, I still cannot believe I found you.</p>
+
+                <div class="hero-counter glass-panel" aria-label="Time together">
+                    <div>
+                        <strong id="hero-days">0</strong>
+                        <span>sunrises together</span>
+                    </div>
+                    <i aria-hidden="true"></i>
+                    <p>and somehow,<br>you are still my favorite day.</p>
+                </div>
+            </div>
+            <a class="scroll-cue" href="#universe" aria-label="Scroll to our story">
+                <span>Explore our story</span>
+                <i aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <section class="section universe-section" id="universe" aria-labelledby="universe-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">No matter the distance</p>
+                <h2 id="universe-title">You are my favorite place.</h2>
+                <p>Some numbers feel big until love makes them small.</p>
+            </div>
+
+            <div class="stat-grid">
+                <article class="stat-card glass-panel tilt-card reveal">
+                    <span class="stat-icon" aria-hidden="true">☼</span>
+                    <strong id="days-together">0</strong>
+                    <span>days since we met</span>
+                    <small id="met-date">Our story began</small>
+                </article>
+                <article class="stat-card featured glass-panel tilt-card reveal">
+                    <span class="stat-icon" aria-hidden="true">⌁</span>
+                    <strong id="distance-value">0</strong>
+                    <span>kilometres apart</span>
+                    <small>but never far from my heart</small>
+                </article>
+                <article class="stat-card glass-panel tilt-card reveal">
+                    <span class="stat-icon" aria-hidden="true">☾</span>
+                    <strong id="next-birthday-days">0</strong>
+                    <span>days to your next birthday</span>
+                    <small>another orbit to love you</small>
+                </article>
+            </div>
+
+            <div class="birthday-countdown glass-panel reveal" aria-label="Countdown to the next birthday">
+                <div>
+                    <p class="eyebrow">Our next celebration begins in</p>
+                    <p class="countdown-label">One more beautiful orbit around the sun.</p>
+                </div>
+                <div class="countdown-clock">
+                    <div><strong id="count-days">00</strong><span>Days</span></div>
+                    <b>:</b>
+                    <div><strong id="count-hours">00</strong><span>Hours</span></div>
+                    <b>:</b>
+                    <div><strong id="count-minutes">00</strong><span>Minutes</span></div>
+                    <b>:</b>
+                    <div><strong id="count-seconds">00</strong><span>Seconds</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section timeline-section" id="story" aria-labelledby="story-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">How we became us</p>
+                <h2 id="story-title">A timeline of little infinities.</h2>
+                <p>The moments I replay when the miles feel a little too loud.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line" aria-hidden="true"><span></span></div>
+                <article class="memory memory-left reveal">
+                    <div class="memory-dot" aria-hidden="true">💬</div>
+                    <div class="memory-card glass-panel tilt-card">
+                        <p class="memory-number">01 · The beginning</p>
+                        <h3>Our first hello</h3>
+                        <p>One ordinary message quietly changed the shape of every day that came after it.</p>
+                        <span class="memory-tag">The best notification ever</span>
+                    </div>
+                </article>
+                <article class="memory memory-right reveal">
+                    <div class="memory-dot" aria-hidden="true">☎</div>
+                    <div class="memory-card glass-panel tilt-card">
+                        <p class="memory-number">02 · The first call</p>
+                        <h3>When a voice felt like home</h3>
+                        <p>Minutes became hours, sleep became optional, and goodbye became the hardest word.</p>
+                        <span class="memory-tag">Worth every lost hour of sleep</span>
+                    </div>
+                </article>
+                <article class="memory memory-left reveal">
+                    <div class="memory-dot" aria-hidden="true">✦</div>
+                    <div class="memory-card glass-panel tilt-card">
+                        <p class="memory-number">03 · Our favorite moments</p>
+                        <h3>The world got softer</h3>
+                        <p>Every laugh, every photo, every quiet check-in became part of the safest place I know.</p>
+                        <span class="memory-tag">Core memory unlocked</span>
+                    </div>
+                </article>
+                <article class="memory memory-right reveal">
+                    <div class="memory-dot" aria-hidden="true">∞</div>
+                    <div class="memory-card glass-panel tilt-card">
+                        <p class="memory-number">04 · Still writing</p>
+                        <h3>Every tomorrow with you</h3>
+                        <p>This timeline has no ending—only more places to go, jokes to repeat, and memories to make.</p>
+                        <span class="memory-tag">To be continued, always</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section reasons-section" id="reasons" aria-labelledby="reasons-title">
+            <div class="reason-orbit reason-orbit-one" aria-hidden="true"></div>
+            <div class="reason-orbit reason-orbit-two" aria-hidden="true"></div>
+            <div class="reasons-layout">
+                <div class="reasons-copy reveal">
+                    <p class="eyebrow">An incomplete list</p>
+                    <h2 id="reasons-title">Reasons why<br>I love you.</h2>
+                    <p>There are far more than a website could hold. Here are a few the universe let me fit.</p>
+                    <div class="reason-progress" aria-hidden="true"><span></span></div>
+                    <small><span id="reason-current">01</span> / <span id="reason-total">12</span></small>
+                </div>
+                <div class="reason-card glass-panel reveal" aria-live="polite">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <p id="reason-text">You make my bad days feel lighter without even trying.</p>
+                    <button class="button button-secondary" id="next-reason" type="button">
+                        Another reason <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section letters-section" id="letters" aria-labelledby="letters-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Open when you need me</p>
+                <h2 id="letters-title">Little letters, sealed with love.</h2>
+                <p>Four notes for four different kinds of days. Tap an envelope to open it.</p>
+            </div>
+            <div class="letter-grid" id="letter-grid"></div>
+        </section>
+
+        <section class="section surprise-section" id="surprise" aria-labelledby="surprise-title">
+            <div class="surprise-card glass-panel reveal">
+                <div class="surprise-sparkles" aria-hidden="true"><i>✦</i><i>·</i><i>✧</i><i>✦</i></div>
+                <span class="secret-label">One last secret</span>
+                <h2 id="surprise-title">Click only if<br>you miss me.</h2>
+                <p>Warning: may cause smiling, happy tears, and the urgent need for a very long hug.</p>
+                <button class="surprise-button" id="open-surprise" type="button">
+                    <span class="pulse-ring" aria-hidden="true"></span>
+                    <span class="surprise-heart" aria-hidden="true">♥</span>
+                    <span>Open your surprise</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="finale" id="finale" aria-labelledby="finale-title">
+            <div class="finale-stars" aria-hidden="true"></div>
+            <div class="finale-content reveal">
+                <p class="eyebrow">Across every mile, in every universe</p>
+                <h2 id="finale-title">I would still<br>choose you.</h2>
+                <p class="final-message" id="final-message">I know we are far apart right now, but every day with you is still my favorite part of life. Happy Birthday, my love. No distance can change how much you mean to me.</p>
+                <div class="signature">
+                    <span>Always yours,</span>
+                    <strong data-sender-name>Me</strong>
+                    <i aria-hidden="true">♥</i>
+                </div>
+            </div>
+            <a class="back-to-top" href="#home">Back to our stars <span aria-hidden="true">↑</span></a>
+        </section>
+    </main>
+
+    <dialog class="love-dialog" id="letter-dialog" aria-labelledby="letter-dialog-title">
+        <button class="dialog-close" type="button" aria-label="Close letter">×</button>
+        <div class="dialog-paper">
+            <p class="eyebrow" id="letter-dialog-label">A note for you</p>
+            <h2 id="letter-dialog-title">Open when...</h2>
+            <div id="letter-dialog-body"></div>
+            <p class="dialog-signature">With all my love, <span data-sender-name>Me</span> ♥</p>
+        </div>
+    </dialog>
+
+    <dialog class="surprise-dialog" id="surprise-dialog" aria-labelledby="surprise-dialog-title">
+        <button class="dialog-close" type="button" aria-label="Close surprise">×</button>
+        <div class="surprise-dialog-inner">
+            <div class="video-wrap" id="video-wrap" hidden></div>
+            <span class="big-heart" aria-hidden="true">♥</span>
+            <p class="eyebrow">I knew you missed me</p>
+            <h2 id="surprise-dialog-title">So here is a hug made of words.</h2>
+            <p id="surprise-message">Close your eyes for a second. Imagine me holding you close, telling you how proud I am of you, and reminding you that this distance is only a chapter—not our whole story. I love you. I miss you. And I am counting down every day until the next hello.</p>
+            <span class="virtual-hug">Sending a ridiculously big virtual hug...</span>
+        </div>
+    </dialog>
+
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <noscript><p class="noscript">This little universe needs JavaScript enabled to reveal its surprises.</p></noscript>
+    <script src="script.js"></script>
+</body>
+</html>
